@@ -396,3 +396,11 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Application Generated Files
+intradotnet-aspnetcore-wasm/obj
+intradotnet-aspnetcore-wasm/bin
+intradotnet-aspnetcore-wasm-test/obj
+intradotnet-aspnetcore-wasm-test/bin
+intradotnet-aspnetcore-wasm-test/obj
+intradotnet-aspnetcore-wasm-test/bin

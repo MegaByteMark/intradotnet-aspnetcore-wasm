@@ -1,0 +1,3 @@
+{
+    "dotnet.defaultSolution": "intradotnet-aspnetcore-wasm.sln"
+}

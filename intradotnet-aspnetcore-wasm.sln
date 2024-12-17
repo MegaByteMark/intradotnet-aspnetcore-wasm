@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "intradotnet-aspnetcore-wasm", "intradotnet-aspnetcore-wasm\intradotnet-aspnetcore-wasm.csproj", "{9846BB8A-E1E0-4D45-9452-E1D98FFED412}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "intradotnet-aspnetcore-wasm-test", "intradotnet-aspnetcore-wasm-test\intradotnet-aspnetcore-wasm-test.csproj", "{B0335F28-5EA7-422A-B94F-70BA562BEAED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "intradotnet-aspnetcore-wasm-example", "intradotnet-aspnetcore-wasm-example\intradotnet-aspnetcore-wasm-example.csproj", "{B455D634-13AF-45D3-8BAC-6E4873D61773}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9846BB8A-E1E0-4D45-9452-E1D98FFED412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9846BB8A-E1E0-4D45-9452-E1D98FFED412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9846BB8A-E1E0-4D45-9452-E1D98FFED412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9846BB8A-E1E0-4D45-9452-E1D98FFED412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0335F28-5EA7-422A-B94F-70BA562BEAED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0335F28-5EA7-422A-B94F-70BA562BEAED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0335F28-5EA7-422A-B94F-70BA562BEAED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0335F28-5EA7-422A-B94F-70BA562BEAED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B455D634-13AF-45D3-8BAC-6E4873D61773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B455D634-13AF-45D3-8BAC-6E4873D61773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B455D634-13AF-45D3-8BAC-6E4873D61773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B455D634-13AF-45D3-8BAC-6E4873D61773}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
