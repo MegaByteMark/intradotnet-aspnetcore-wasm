@@ -24,7 +24,7 @@ namespace IntraDotNet.AspNetCore.Wasm.BrowserConsole
         /// <typeparam name="TState">The type of the state to begin scope for.</typeparam>
         /// <param name="state">The identifier for the scope.</param>
         /// <returns>An IDisposable that ends the logical operation scope on dispose.</returns>
-        public IDisposable BeginScope<TState>(TState state) => null;
+        IDisposable ILogger.BeginScope<TState>(TState state) => default!;
 
         /// <summary>
         /// Checks if the given log level is enabled.
