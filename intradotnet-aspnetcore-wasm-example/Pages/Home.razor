@@ -1,7 +1,33 @@
 ﻿@page "/"
+@using IntraDotNet.AspNetCore.Wasm.Fetch
+@inject IHttpClientFactory factory;
 
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
 
 Welcome to your new app.
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            //Using the HttpClientFactory to create a named client
+            var client = factory.CreateClient("MyClient");
+            var response = await client.GetAsync("https://localhost:5001/api/WeatherForecast");
+            var data = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(data);
+
+            //Creating a new HttpClient without the factory
+            var client2 = new HttpClient(new BrowserIncludeRequestCredentialsDelegatingHandler());
+            var response2 = await client.GetAsync("https://localhost:5001/api/WeatherForecast");
+            var data2 = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(data);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
+}
