@@ -30,7 +30,7 @@ using IntraDotNet.AspNetCore.Wasm.BrowserConsole;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Logging.AddBrowserConsole(builder.Configuration);
+builder.Logging.AddBrowserConsole();
 
 var app = builder.Build();
 
