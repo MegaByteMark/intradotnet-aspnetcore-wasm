@@ -1,6 +1,7 @@
 ﻿@page "/"
 @using IntraDotNet.AspNetCore.Wasm.Fetch
 @inject IHttpClientFactory factory;
+@inject ILogger logger;
 
 <PageTitle>Home</PageTitle>
 
@@ -11,6 +12,8 @@ Welcome to your new app.
 @code {
     protected override async Task OnInitializedAsync()
     {
+        logger.LogInformation("OnInitializedAsync in browser console!");
+        
         try
         {
             //Using the HttpClientFactory to create a named client

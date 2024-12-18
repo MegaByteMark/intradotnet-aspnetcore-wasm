@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
 namespace IntraDotNet.AspNetCore.Wasm.BrowserConsole
@@ -7,15 +8,18 @@ namespace IntraDotNet.AspNetCore.Wasm.BrowserConsole
     /// </summary>
     public class BrowserConsoleLogger : ILogger
     {
+        private readonly IConfiguration _configuration;
         private readonly LogLevel _logLevel;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="BrowserConsoleLogger"/> class.
         /// </summary>
         /// <param name="logLevel">The minimum log level for messages to be logged.</param>
-        public BrowserConsoleLogger(LogLevel logLevel)
+        public BrowserConsoleLogger(IConfiguration configuration)
         {
-            _logLevel = logLevel;
+            // Use the configuration as needed
+            _configuration = configuration;
+            _logLevel = configuration.GetValue<LogLevel>("Logging:LogLevel:Default");
         }
 
         /// <summary>
