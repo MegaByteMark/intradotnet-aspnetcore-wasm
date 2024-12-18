@@ -26,10 +26,7 @@ namespace IntraDotNet.AspNetCore.Wasm.BrowserConsole
         /// <returns>A new instance of <see cref="BrowserConsoleLogger"/>.</returns>
         public ILogger CreateLogger(string categoryName)
         {
-            // Use the configuration as needed
-            LogLevel logLevel = _configuration.GetValue<LogLevel>("Logging:LogLevel:Default");
-            
-            return new BrowserConsoleLogger(logLevel);
+            return new BrowserConsoleLogger(_configuration);
         }
 
         /// <summary>
