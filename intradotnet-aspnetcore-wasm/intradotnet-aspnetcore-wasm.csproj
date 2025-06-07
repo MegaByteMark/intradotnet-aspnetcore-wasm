@@ -9,15 +9,16 @@
 
   <PropertyGroup>
     <PackageId>IntraDotNet.AspNetCore.Wasm</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>MegaByteMark</Authors>
     <Description>WebAssembly polyfill for enabling Windows features when targeting an intranet
       environment.</Description>
-    <PackageTags>aspnet-core;windows;wasm</PackageTags>
+    <PackageTags>aspnet-core;windows;wasm;authentication;authorization;webassembly;intranet;dotnet</PackageTags>
     <RepositoryUrl>https://github.com/MegaByteMark/intradotnet-aspnetcore-wasm</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/MegaByteMark/intradotnet-aspnetcore-wasm</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <AssemblyName>IntraDotNet.AspNetCore.Wasm</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
